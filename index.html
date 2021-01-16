@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+   
+    <div style="width: 499px;height: 308px" id="mapsfzus6mp"></div>
+  
+    <script>function GoogleReadyHandlersfzus6mp() {
+        var infoWindow, map = new google.maps.Map(document.getElementById("mapsfzus6mp"), {
+            center: {lat: 49.23633755473276, lng: 28.467752937907864},
+            zoom: 15,
+            disableDefaultUI: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            mapTypeId: "roadmap"
+        });
+        infoWindow = new google.maps.InfoWindow();
+        (new google.maps.Marker({
+            position: {lat: 49.23382959714374, lng: 28.462774757976224},
+            map: map,
+            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B01")
+        }))
+        .addListener('click', function (e) {
+            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+            infoWindow.open(map, this);
+        });
+        (new google.maps.Marker({
+            position: {lat: 49.23587520341031, lng: 28.466224078769375},
+            map: map,
+            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B02")
+        }))
+        .addListener('click', function (e) {
+            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+            infoWindow.open(map, this);
+        });
+        (new google.maps.Marker({
+            position: {lat: 49.2332971651805, lng: 28.47261846506088},
+            map: map,
+            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B03")
+        }))
+        .addListener('click', function (e) {
+            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+            infoWindow.open(map, this);
+        });
+        (new google.maps.Marker({
+            position: {lat: 49.23357739324494, lng: 28.47987115823715},
+            map: map,
+            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B04")
+        }))
+        .addListener('click', function (e) {
+            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+            infoWindow.open(map, this);
+        });
+        (new google.maps.Marker({
+            position: {lat: 49.23764052153873, lng: 28.47137392007797},
+            map: map,
+            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B05")
+        }))
+        .addListener('click', function (e) {
+            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+            infoWindow.open(map, this);
+        });
+        return map;
+    }</script>
+      <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCurszl5g-MDXeKzSeeh03KhKPw7_FMLhA&callback=GoogleReadyHandlersfzus6mp" async defer></script>
+</body>
+</html>
