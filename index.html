@@ -8,65 +8,46 @@
 </head>
 <body>
    
-    <div style="width: 499px;height: 308px" id="mapsfzus6mp"></div>
-  
-    <script>function GoogleReadyHandlersfzus6mp() {
-        var infoWindow, map = new google.maps.Map(document.getElementById("mapsfzus6mp"), {
-            center: {lat: 49.23633755473276, lng: 28.467752937907864},
-            zoom: 15,
-            disableDefaultUI: true,
-            zoomControl: true,
-            mapTypeControl: true,
-            mapTypeId: "roadmap"
-        });
-        infoWindow = new google.maps.InfoWindow();
-        (new google.maps.Marker({
-            position: {lat: 49.23382959714374, lng: 28.462774757976224},
-            map: map,
-            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B01")
-        }))
-        .addListener('click', function (e) {
-            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
-            infoWindow.open(map, this);
-        });
-        (new google.maps.Marker({
-            position: {lat: 49.23587520341031, lng: 28.466224078769375},
-            map: map,
-            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B02")
-        }))
-        .addListener('click', function (e) {
-            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
-            infoWindow.open(map, this);
-        });
-        (new google.maps.Marker({
-            position: {lat: 49.2332971651805, lng: 28.47261846506088},
-            map: map,
-            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B03")
-        }))
-        .addListener('click', function (e) {
-            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
-            infoWindow.open(map, this);
-        });
-        (new google.maps.Marker({
-            position: {lat: 49.23357739324494, lng: 28.47987115823715},
-            map: map,
-            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B04")
-        }))
-        .addListener('click', function (e) {
-            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
-            infoWindow.open(map, this);
-        });
-        (new google.maps.Marker({
-            position: {lat: 49.23764052153873, lng: 28.47137392007797},
-            map: map,
-            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B05")
-        }))
-        .addListener('click', function (e) {
-            infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
-            infoWindow.open(map, this);
-        });
-        return map;
-    }</script>
-      <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCurszl5g-MDXeKzSeeh03KhKPw7_FMLhA&callback=GoogleReadyHandlersfzus6mp" async defer></script>
+    <div style="width: 645px;height: 475px" id="mape9bby6lh"></div>
+<script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+<script>(function () {
+    var map = L.map("mape9bby6lh").setView([49.235959188996844,28.46927404229064], 15);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([49.23402100524378,28.46390247344971], {
+        title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B01"),
+    }).addTo(map)
+    .on('click', function (e) {
+        this.bindPopap(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+    });
+    L.marker([49.23671108962031,28.470468521118168], {
+        title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B02"),
+    }).addTo(map)
+    .on('click', function (e) {
+        this.bindPopap(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+    });
+    L.marker([49.237859935176914,28.462486267089847], {
+        title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B03"),
+    }).addTo(map)
+    .on('click', function (e) {
+        this.bindPopap(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+    });
+    L.marker([49.2337407796959,28.475060462951664], {
+        title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B04"),
+    }).addTo(map)
+    .on('click', function (e) {
+        this.bindPopap(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+    });
+    L.marker([49.231134605962175,28.47012519836426], {
+        title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B05"),
+    }).addTo(map)
+    .on('click', function (e) {
+        this.bindPopap(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+    });
+    return map;
+}())</script>
+<!-- <div style="text-align: right;"><a href="https://maps-creator.com" target="_blank" style="color: #ccc; font: 13px Arial, Helvetica, sans-serif;">создано с помощью конструктора maps-creator.com</a></div> -->
 </body>
 </html>
